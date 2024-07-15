@@ -1,0 +1,172 @@
+#sender-info-container {
+    width: 30%;
+    min-height: 500px;
+
+}
+
+.top-nav-sender {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+
+.close-button {
+    width: 40px;
+    background-color: transparent;
+    border: none;
+}
+
+.main-info-sender {
+    height: 400px;
+    background-color: white;
+}
+
+
+.main-sender-name-wrapper img {
+    width: 30%;
+    border-radius: 50%;
+    height: 100px;
+}
+
+.number {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 75%;
+}
+
+.sender-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.sender-contact  i {
+    font-size: 20px;
+    width: 15%;
+}
+
+.toggle-container {
+    width: 20%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-notification {
+    width: 60%;
+    height: 18px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-traveller {
+    height: 100%;
+    width: 18px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.5s margin;
+}
+
+#notification-icon {
+    font-size: 23px;
+    width: 15%;
+}
+
+.notification-text {
+    text-align: left;
+    width: 45%;
+}
+
+.close-button {
+    cursor: pointer;
+}
+
+.close-button i {
+    font-size: 22px;
+}
+
+.top-nav-sender h5 {
+    font-size: 18px;
+    font-weight: 450;
+}
+
+#edit-pencil {
+    font-size: 17px;
+}
+
+.edit-sender {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1080px) {
+    #sender-info-container {
+        position: absolute;
+        background-color: azure;
+        right: 0;
+    }
+    
+       
+    }
+
+    @media screen and (max-width:850px) {
+        
+.main-info-sender {
+   font-size: 13px;
+}
+
+.main-sender-name-wrapper img {
+    width: 27%;
+    height: 70px;
+}
+
+#sender-info-container {
+    min-height: 120px;
+    width: 33%;
+}
+
+    }
+
+
+    @media screen and (max-width:550px) {
+        
+
+        .main-info-sender {
+            font-size: 16px;
+         }
+         
+         .main-sender-name-wrapper img {
+             width: 27%;
+             height: 130px;
+         }
+
+         #sender-info-container {
+            width: 100%;
+        }
+
+    }
+
+    @media screen and (max-width:380px){
+        .main-info-sender {
+            font-size: 13px;
+            height: 350px;
+         }
+         
+         .main-sender-name-wrapper img {
+             width: 25%;
+             height: 80px;
+         }
+
+         
+
+
+    }

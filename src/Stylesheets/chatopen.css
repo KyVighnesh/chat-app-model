@@ -1,0 +1,275 @@
+.open-chat-nav {
+    height: 65px;
+    width: 100%;
+    border-left: 1px solid #d9dce3;
+    box-shadow: 2px 2px 2px 2px rgb(196, 190, 190);
+    background-color: white;
+
+}
+
+#open-chat {
+    width: 100%;
+    background-image: url(https://previews.123rf.com/images/huhabra/huhabra1507/huhabra150700012/42836152-green-background-with-vegetables.jpg);
+    background-size: contain;
+    height: 750px;
+    overflow: hidden;
+    
+}
+
+.nav-left-open {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 100%;
+    justify-content: center;
+}
+
+.bottom-chat {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+
+.sent-bar {
+    width: 60%;
+    background-color: white;
+    height: 62%;
+    border-radius: 20px 30px 1px 20px;
+    margin-right: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sent-bar::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 20px 50px 5px 20px;
+    /* box-shadow: 10px 10px 0 10px #dcf8c6; */
+
+}
+
+.main-chat-info-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    gap: 60px;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.switch {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3390ec;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .mic-on, .mic-off {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+  }
+  
+  .mic-on {
+    z-index: 4;
+  }
+  
+  .mic-off {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    opacity: 0;
+  }
+  
+  .switch:hover {
+    background-color: #1d4873;
+  }
+  
+  #checkbox {
+    display: none;
+  }
+  
+  #checkbox:checked + .switch {
+    background-color: red
+  }
+  
+  #checkbox:checked + .switch .mic-off {
+    opacity: 1;
+  }
+  
+  #checkbox:active + .switch {
+    scale: 1.2;
+  }
+
+  .message-input-container {
+    width: 75%;
+    height: 100%;
+  }
+
+  .message-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+  }
+
+  .emoji {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .emoji i {
+    font-size: 25px;
+    opacity: 0.6;
+  }
+
+  .message-input::placeholder {
+    font-size: 17px;
+  }
+
+  .chat-parent {
+    display: flex;
+    width: 100%;
+  }
+
+  .nav-right-open {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-right-open  i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.open-chat-nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+.chat-bubble {
+    width: 35%;
+    background-color: #fff;
+    min-height: 30px;
+    border-bottom: 1px solid black;
+    margin-top: 20px;
+    border-radius: 12px 16px 0px 12px;
+
+}
+
+
+.chat-messages {
+    height: 380px;
+    width: 80%;
+    overflow: scroll;
+    overflow-x: hidden;
+    -webkit-scrollbar {
+        display: none;
+      }
+
+      -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+
+#close-open-chat {
+  display: none;
+}
+
+
+@media screen and (max-width:855px) {
+    .user-info span {
+        font-size: 12px;
+    }
+
+    .chat-icon {
+        width: 30%;
+    }
+
+    .nav-right-open {
+        width: 30%;
+    }
+
+    .nav-right-open i {
+        font-size: 15px;
+    }
+
+  .sent-bar {
+    width: 80%;
+  }
+
+
+}
+
+@media screen and (max-width:440px){
+    .sent-bar {
+        width: 95%;
+      }
+
+    
+}
+
+@media screen and (max-width:730px) {
+    .nav-left-open {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width:1080px) {
+    
+    .chat-messages {
+        width: 90%;
+    }
+
+    .chat-bubble {
+        width: 40%;
+        overflow-wrap: break-word;
+    }
+   
+}
+
+@media screen and (max-width:665px) {
+  #close-open-chat {
+    display: block;
+    margin-left: 20px;
+  }
+}
+
+

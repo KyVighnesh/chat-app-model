@@ -1,0 +1,30 @@
+.search-option-container {
+    width: 100%;
+    height: 645px;
+}
+
+.search-nav-head {
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    height: 40px;
+    align-items: center;
+}
+
+.search-nav-head div {
+    width: 20%;
+}
+
+.info-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:840px) {
+
+    .option-text {
+        font-size: 12px
+    }
+}
